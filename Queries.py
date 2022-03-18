@@ -10,3 +10,7 @@ CREATE_TABLE_EMAILS = """CREATE TABLE emails (
 
 SELECT_ALL_FROM_EMAILS = "SELECT * FROM emails"
 
+INSERT_INTO_EMAILS = """INSERT INTO emails(email, pass) VALUES ( 
+    "{0}",
+    "{1}"
+    )"""
