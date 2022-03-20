@@ -4,7 +4,8 @@ from getpass import getpass
 from mysql.connector import connect, Error
 
 
-# TODO: Create tables, insert values, algorithm to insert and display using PyQT5
+# TODO: Insert new e_mail-password
+# TODO: Learn OOP to build this project
 
 try:
     connection = connect(
@@ -17,8 +18,8 @@ try:
 except Exception as err:
     print(err)
 
-# TODO: Insert new e_mail
+def store_email(email_input, password):
+    cur.execute(INSERT_INTO_EMAILS.format(email_input, password))
+    connection.commit()
 
-# TODO: Learn OOP to build this project
-
-    
+store_email("test_potato@potato.com", "potato")
