@@ -6,6 +6,7 @@ from mysql.connector import connect, Error
 
 # TODO: Insert new e_mail-password
 # TODO: Learn OOP to build this project
+# TODO: Work on GUI
 
 try:
     connection = connect(
