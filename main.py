@@ -8,19 +8,19 @@ from mysql.connector import connect, Error
 # TODO: Learn OOP to build this project
 # TODO: Work on GUI
 
-try:
+""" try:
     connection = connect(
                 host="localhost",
-                user="root",
+                user=input("inser user: "),
                 password=getpass("insert password: "),
                 database="passwords_db")
-
     cur = connection.cursor()
-except Exception as err:
-    print(err)
+except Error as err:
+    print(err) """
 
-def store_email(email_input, password):
+""" def store_email(email_input, password):
     cur.execute(INSERT_INTO_EMAILS.format(email_input, password))
-    connection.commit()
-
+    connection.commit() """
+""" 
 store_email("test_potato@potato.com", "potato")
+ """
